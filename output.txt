@@ -1,0 +1,36 @@
+SERVER OUTPUT
+
+laraib@DESKTOP-97BUHPD:~$ g++ -o server server.cpp
+laraib@DESKTOP-97BUHPD:~$ ./server
+Server listening on port 6000...
+New connection from 127.0.0.1:63338
+Received from client: hi
+Client sent: hi. Replying with 'Ok'
+New connection from 127.0.0.1:63340
+Received from client: hello
+Client sent: hello. Replying with 'Ok'
+Received from client: bye
+Client sent 'bye'. Replying with 'Goodbye'
+
+
+CLIENT 1 OUTPUT
+
+laraib@DESKTOP-97BUHPD:~$ g++ -o client1 client.cpp
+laraib@DESKTOP-97BUHPD:~$ ./client1
+Connected to server
+Enter a message (or 'exit' to quit): hi
+Server response: Ok
+Enter a message (or 'exit' to quit): 
+
+
+CLIENT 2 OUTPUT
+
+laraib@DESKTOP-97BUHPD:~$ g++ -o client2 client.cpp
+laraib@DESKTOP-97BUHPD:~$ ./client2
+Connected to server
+Enter a message (or 'exit' to quit): hello
+Server response: Ok
+Enter a message (or 'exit' to quit): bye
+Server response: Goodbye
+Server sent 'Goodbye'. Closing the connection.
+laraib@DESKTOP-97BUHPD:~$ 
